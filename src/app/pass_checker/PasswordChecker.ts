@@ -14,7 +14,7 @@ export class PasswordChecker {
   public checkPassword(password: string): CheckResult {
     const reasons: PasswordErrors[] = [];
 
-    this.checkoForlenght(password, reasons);
+    this.checkForlenght(password, reasons);
     this.checkForLowerCase(password, reasons);
     this.checkForUpperCase(password, reasons);
 
