@@ -34,7 +34,7 @@ export class PasswordChecker {
     };
   }
 
-  private checkoForlenght(password: string, reasons: PasswordErrors[]) {
+  private checkForlenght(password: string, reasons: PasswordErrors[]) {
     if (password.length < 8) {
       reasons.push(PasswordErrors.SHORT);
     }
