@@ -22,7 +22,7 @@ jest.mock('../../../app/server_app/data/DataBase', () => {
   };
 });
 
-describe.only('ReservationsDataAccess test suite', () => {
+describe('ReservationsDataAccess test suite', () => {
   let sut: ReservationsDataAccess;
 
   const someReservation: Reservation = {
