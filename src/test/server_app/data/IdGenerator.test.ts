@@ -4,7 +4,7 @@ jest.mock('crypto', () => ({
   randomBytes: () => '12345bs',
 }));
 
-describe.only('IdGenerator test suite', () => {
+describe('IdGenerator test suite', () => {
   it('should generate a random id', () => {
     const actual = IdGenerator.generateRandomId();
     expect(actual).toBe('12345bs');
